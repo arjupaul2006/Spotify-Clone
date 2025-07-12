@@ -1,0 +1,11 @@
+document.querySelector(".time-vol").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
+        console.log(e, e.target, e.target.value)
+        console.log(document.querySelector(".time-vol").getElementsByTagName("input")[0].value)
+        currentSong.volume = e.target.value / 100
+        if(e.target.value === '0'){
+            document.getElementById("volume").src = "image/mute.svg"
+        }
+        else{
+            document.getElementById("volume").src = "image/volumn.svg"
+        }
+    })

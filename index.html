@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="shortcut icon" href="image/spotify logo.png" type="image/x-icon">
+    <title>Spotify Clone</title>
+</head>
+<body class="bg-black">
+    
+    <div class="container flex justify-center">
+
+        <div class="left m-10px flex flex-column item-center">
+
+            <div class="home-container bg-lightBlack flex flex-column item-center m-10px border-radius full-width">
+
+                <img id="close" class="invert" src="image/close.svg">
+
+                <div class="logo full-width ">
+                    <img class="invert" src="image/logo.svg">
+                </div>
+
+                <div class="home home-child full-width flex">
+                    <img class="invert" src="image/home.svg">
+                    <p class="bold">Home</p>
+                </div>
+
+                <div class="search home-child full-width flex">
+                    <img class="invert" src="image/search.svg">
+                    <p class="bold">Search</p>
+                </div>
+
+            </div>
+
+            <div class="library-container flex flex-column space-between bg-black m-10px border-radius full-width">
+
+                <div class="library-top flex flex-column full-width">
+
+                    <div class="your-library flex space-between full-width ">
+
+                        <div class="library flex justify-center item-center full-height">
+                            <img class="invert" src="image/playlist.svg" alt="playlist">
+                            <p>Your Playlist</p>
+                        </div>
+
+                        <div class="plus"><img class="invert full-width" src="image/plus.svg" alt=""></div>
+
+                    </div>
+
+                    <!-- <div class="create bg-lightBlack flex flex-column m-10px border-radius p-10px">
+
+                        <h4>Create your first playlist</h4>
+                        <h5>It's easy, we'll help you</h5>
+                        <button id="create-playlist" class="bold"> Create Playlist</button>
+
+                    </div>
+
+                    <div class="let bg-lightBlack flex flex-column m-10px border-radius p-10px">
+
+                        <h4>Let's find some podcasts to follow</h4>
+                        <h5>We'll keep you updated on new episodes</h5>
+                        <button id="podcasts" class="bold">Broswer podcasts</button>
+
+                    </div> -->
+
+                    <div class="songList">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="library-bottom flex">
+
+                    <a href="">Legal</a>
+                    <a href="">Safety & Privacy Center</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">About Ads</a>
+                    <a href="">Accessibility</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right ">
+
+            <div class="header flex space-between item-center  border-radius p-10px ga">
+
+                <div class="arrow flex justify-center item-center">
+                    <img id="hamburger" class="invert" src="image/hamburger.svg">
+                    <img id="left-arrow" class="invert" src="image/left arrow.svg">
+                    <img id="right-arrow" class="invert" src="image/right arrow.svg">
+                </div>
+
+                <div class="button flex">
+
+                    <button id="signUp" class="bold curser">Sign Up</button>
+                    <button id="login" class="bold curser">Log in</button>
+
+                </div>
+
+            </div>
+
+            <div class="spotify-playlist">
+
+                <div class="flex space-between item-center m-10px">
+                    <h2 class="m-10px">Spotify Playlists</h2>
+                    <!-- <span id="showAll">Show All</span> -->
+                </div>
+
+                <div class="card-container">
+
+                    <!-- <div class="card flex flex-column justify-center border-radius m-10px">
+
+                        <img id="card-image" src="image/shreya_ghosal.png">
+                        <a class="song-name" href="">Shreya Ghosal</a>
+                        
+
+                    </div> -->
+
+
+                </div>
+
+                <div class="play border flex item-center m-10px">
+
+                    <!-- <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div> -->
+                    <div class="seekBar">
+                        <input id="seekbar" type="range" name="seekBar" value="0">
+                    </div>
+
+                    <div class="songInfo"></div>
+
+                    <div class="playbar">
+
+                        <img id="previous" class="invert curser" src="image/previous button.svg">
+                        <img id="play" class="invert curser" src="image/pauseButton.svg">
+                        <img id="next" class="invert curser" src="image/next button.svg">
+
+                    </div>
+
+                    <div class="time-vol">
+                        <div class="songTime"></div>
+                        <div class="volume flex justify-center item-center gap-10px">
+                            <img id="volume" class="invert" src="image/volumn.svg" >
+                            <input type="range" name="volume" id="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
