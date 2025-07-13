@@ -92,7 +92,7 @@ const playMusic = (track1, track2, pause, folder) =>{
     
     document.getElementById("play").src = "image/playButton.svg"
     console.log(track1 + " " + track2)
-    currentSong.src = `Spotify-Clone/${folder}/` + track1 + "-" + track2 + ".mp3"
+    currentSong.src = `${folder}/` + track1 + "-" + track2 + ".mp3"
     console.log(currentSong.src)
     if(!pause){
         currentSong.play()
