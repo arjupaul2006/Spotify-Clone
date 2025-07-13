@@ -209,7 +209,7 @@ img{
     /* gap: 20px; */
     overflow-y: auto;
     /* flex-wrap: wrap; */
-    max-height: 422px;
+    max-height: 375px;
 }
 
 .card{
