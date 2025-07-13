@@ -209,7 +209,7 @@ img{
     /* gap: 20px; */
     overflow-y: auto;
     /* flex-wrap: wrap; */
-    max-height: 497px;
+    max-height: 422px;
 }
 
 .card{
@@ -393,7 +393,7 @@ img{
 /* media query for mobile */
 @media screen and (max-width: 630px) {
     .card-container{
-        max-height: 65vh;
+        max-height: 73vh;
     }
 
     .play{
