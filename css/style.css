@@ -438,7 +438,7 @@ img{
 
 @media screen and (max-width: 380px){
     .card-container{
-        max-height: 67vh;
+        max-height: 60vh;
     }
 }
 
