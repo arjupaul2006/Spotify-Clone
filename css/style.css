@@ -209,7 +209,7 @@ img{
     /* gap: 20px; */
     overflow-y: auto;
     /* flex-wrap: wrap; */
-    max-height: 362px;
+    max-height: 480px;
 }
 
 .card{
@@ -217,7 +217,8 @@ img{
     /* height: 346px; */
     gap: 20px;
     padding: 10px;
-    background-color: rgb(19, 18, 18);
+    background: #1c1c21;
+background: linear-gradient(162deg, rgba(28, 28, 33, 1) 57%, rgba(9, 9, 121, 1) 81%, rgba(0, 212, 255, 1) 100%);
 }
 
 .card a:hover{
@@ -275,7 +276,8 @@ img{
     position: fixed;
     bottom: 0;
     right: 64px;
-    background-color: #555;
+    background: #1c1c21;
+background: radial-gradient(circle, rgba(28, 28, 33, 1) 47%, rgba(9, 9, 121, 1) 77%, rgba(0, 212, 255, 1) 100%);
     border-radius: 50px;
     justify-content: space-between;
     padding: 20px;
@@ -306,6 +308,7 @@ img{
 
 .seekBar input{
     width: 100%;
+    transition: 0.5s all linear;
 }
 
 .circle{
@@ -438,7 +441,7 @@ img{
 
 @media screen and (max-width: 380px){
     .card-container{
-        max-height: 60vh;
+        max-height: 67vh;
     }
 }
 
