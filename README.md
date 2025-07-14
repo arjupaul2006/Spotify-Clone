@@ -1,1 +1,2 @@
-# Spotify-Clone
+🎵 Spotify Clone – Intermediate Frontend Project
+This is an intermediate-level frontend project where I built a responsive clone of the Spotify web app using HTML, CSS, and JavaScript. Users can browse the song list, select a track to play, and control playback with play/pause, next, and previous buttons. The project also features a functional volume control system and dynamic UI updates to simulate a real music streaming experience.
