@@ -1,3 +1,7 @@
+document.querySelector(".search-text").addEventListener("click", () => {
+    document.querySelector(".search-text").style.display = "none"
+    document.querySelector(".search").style.display = "block"
+})
 
 //logic for hamburger button
 document.getElementById("hamburger").addEventListener("click",()=>{
@@ -306,4 +310,36 @@ document.querySelector(".seekBar").getElementsByTagName("input")[0].addEventList
     currentSong.currentTime = currentSong.duration * (e.target.value / 100)
     // if()
         
+})
+
+document.getElementById("searchElement").addEventListener("input", async (e) => {
+    const albumData = await fetch("albums.json");
+    const albumResponse = await albumData.json();
+
+    // console.log(e.target.value.toLowerCase());
+
+    const filterData = albumResponse.filter((data) =>
+        data.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+
+    // console.log(filterData);
+
+    let albumClass = document.querySelector(".card-container")
+    albumClass.innerHTML = ""
+
+    
+
+    for (const element of filterData) {
+        albumClass.innerHTML += `<div class="card flex flex-column justify-center border-radius m-10px">
+            <img id="card-image" src="image/${element}.png">
+            <a class="song-name" href="#">${element}</a>
+        </div>`
+    }
+
+    Array.from(document.querySelectorAll(".card")).forEach(e => {
+        e.addEventListener("click", async () => {
+            folder = "songs/" + e.querySelector(".song-name").innerHTML.replaceAll(" ", "%20")
+            await getSongs(folder)
+        })
     })
+});
